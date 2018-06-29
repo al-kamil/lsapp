@@ -1,0 +1,2 @@
+{!! Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right']) !!}
+{{Form::hidden('_method', 'DELETE')}} {{Form::submit('Submit', ['class' => 'btn btn-primary'])}} {!! Form::close() !!}
