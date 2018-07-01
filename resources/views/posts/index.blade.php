@@ -6,7 +6,7 @@
             <div class="card list-group">
                 <div class="list-group-item">
                     <h3 class="card-title"><a href='/posts/{{$post->id}}'>{{$post->title}}</a></h3>
-                    <small class="card-link">{{$post->created_at}}</small>
+                    <small class="card-link">{{$post->created_at}} and created by {{$post->user->name}}</small>
                 </div>
             </div>
         @endforeach 
